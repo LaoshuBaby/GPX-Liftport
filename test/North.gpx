@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gpx version="1.1" creator="JOSM GPX export" xmlns="http://www.topografix.com/GPX/1/1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <bounds minlat="36" minlon="118" maxlat="37" maxlon="119"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="36" lon="118">
+        <time>2021-03-05T02:17:01Z</time>
+      </trkpt>
+      <trkpt lat="37" lon="119">
+        <time>2021-03-05T02:17:01Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

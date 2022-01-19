@@ -1,4 +1,6 @@
 # Download Metadata: GET /api/0.6/gpx/#id/details
+import base64
+
 import requests
 
 URL_PATTERN={
@@ -18,8 +20,13 @@ def call_func(server:str, id:int, mode:str):
     print("url=" + url)
     if mode=="simple":
         body = requests.get(url)
-    else:
+    elif mode=="auto":
         body = requests.get(url,auth=(username,password))
+    else:
+        content=username+":"+password
+        header["Authorization"]="Basic "+str(base64.b64encode(content.encode("utf-8")))[2:-1]
+        body = requests.get(url,headers=header)
+    print(header)
     print(body.text)
 
 def init():
